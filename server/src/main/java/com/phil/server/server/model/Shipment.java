@@ -16,6 +16,14 @@ public class Shipment {
     @Column
     private String name;
 
+    public Shipment(){}
+
+    public Shipment(Long id, Long trackingnumber, String name){
+        this.id = id;
+        this.trackingnumber = trackingnumber;
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }
