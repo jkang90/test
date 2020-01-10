@@ -41,7 +41,7 @@ pipeline {
             post {
                 always {
                     dir("server"){
-                        publishCoverage adapters: [jacoco('/target/site/jacoco/jacoco.xml')]
+                        publishCoverage adapters: [jacocoAdapter('/target/site/jacoco/jacoco.xml')]
                     }
                 } 
             }
